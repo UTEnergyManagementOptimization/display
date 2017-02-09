@@ -1,0 +1,6 @@
+*.bak
+*.bck
+*.csv
+*.bin_autobck
+*.bin
+*.tmp
