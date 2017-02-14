@@ -199,7 +199,6 @@ var buildings = {
     'hsm': { 'lat': 30.2889, 'lon': -97.7408 }
 }; 
   socket.on('message', function (data) { 
-    debugger; 
     var nodeId = data.nodeId;
     var measurementType; 
     for(var i=0; i != measurementTypes.length; i++){
@@ -270,7 +269,6 @@ var buildings = {
         });
         marker.addListener('click', function() {
             console.log('clicked ' + marker.getTitle() + ' ');
-            debugger; 
             $("#container").load( "http://localhost/iws80/CustomWidget/web/widgets/technical/alarms.html" ); 
         });
         markers[building] = marker;
@@ -308,7 +306,6 @@ var buildings = {
     }
   }); 
   $(document).ready(function(){
-    debugger; 
     function exclusiveOn(switchExclusivelyOn){
         for(var i=0; i!=measurementTypes.length; i++){
             var measurementType = measurementTypes[i];
